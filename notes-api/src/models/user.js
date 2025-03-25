@@ -2,13 +2,13 @@ import { Sequelize } from "sequelize";
 import dbConfig from "../config/dbConfig.js";
 const {seq: db} = dbConfig;
 
-const user = db.define('user', {
+const users = db.define('users', {
     uid: {
         type: Sequelize.INTEGER,
         primaryKey : true,
         autoIncrement: true
     },
-    name: {
+    username: {
         type: Sequelize.STRING,
         allowNull: false
     }
@@ -18,4 +18,4 @@ const user = db.define('user', {
     tableName : 'user',
 }).schema('public');
 
-export default user;
+export default users;

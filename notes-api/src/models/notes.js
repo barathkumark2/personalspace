@@ -9,8 +9,7 @@ const notes = db.define('notes', {
         autoIncrement: true
     },
     note: {
-        type: Sequelize.STRING,
-        allowNull: false
+        type: Sequelize.TEXT
     }
 
 }, {
