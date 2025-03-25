@@ -3,7 +3,7 @@ const app = express();
 import { envConfig } from "./environment.js";
 import routes from "./src/routes/index.js";
 import config from "./src/config/dbConfig.js";
-import users from "./src/models/user.js";
+import users from "./src/models/users.js";
 import teams from "./src/models/teams.js";
 import notes from "./src/models/notes.js";
 import bodyParser from 'body-parser';

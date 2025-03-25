@@ -11,11 +11,14 @@ const users = db.define('users', {
     username: {
         type: Sequelize.STRING,
         allowNull: false
+    },
+    password: {
+        type: Sequelize.STRING
     }
 }, {
     timestamps : false,
     freezeTableName: true,
-    tableName : 'user',
+    tableName : 'users',
 }).schema('public');
 
 export default users;
