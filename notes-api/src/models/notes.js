@@ -10,8 +10,14 @@ const notes = db.define('notes', {
     },
     note: {
         type: Sequelize.TEXT
+    },
+    username: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    noteId: {
+        type: Sequelize.STRING
     }
-
 }, {
     timestamps : false,
     freezeTableName: true,
