@@ -1,0 +1,27 @@
+{
+  "name": "notes-api-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "local": "tsc && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "barath kumar kamalanathan",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.14.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.24.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.1.9",
+    "pg": "^8.14.1",
+    "sequelize": "^6.37.6",
+    "typescript": "^5.8.3"
+  }
+}
